@@ -4,10 +4,12 @@
     ViewData["Title"] = "Detail";
 }
 
+@section message {
 
-@if (Model.Message != null)
-{
-    <div class="alert alert-info container-fluid">@Model.Message.</div>
+    @if (Model.Message != null)
+    {
+        <div class="alert alert-info container-fluid">@Model.Message.</div>
+    }
 }
 
 <h2>@Model.Restaurant.Name</h2>

@@ -38,6 +38,7 @@
             </div>
         </div>
     </nav>
+    @RenderSection("message", required: false)
 
     <partial name="_CookieConsentPartial" />
 
@@ -45,6 +46,8 @@
         @RenderBody()
         <hr />
         <footer>
+            <vc:restaurant-count></vc:restaurant-count>
+            @RenderSection("footer", required: false)
             <p>&copy; 2020 - OdeToFood</p>
         </footer>
     </div>
